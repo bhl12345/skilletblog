@@ -8,8 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
+import logo from "../images/pontificate.png"
+import dumbDon from "../images/dumbtrump.jpg"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,16 +26,25 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    < >
       <Header siteTitle={data.site.siteMetadata?.title || `Title`  } /> 
-      <h2>
-      {data.site.siteMetadata?.description || `Description`} </h2>
-      <div
- 
-      >
+      <h2 style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+         
+          
+        }}>
+      {data.site.siteMetadata?.description || `Description`} </h2>     
+      <div>
+     <center> <img src={logo} alt="Flowers in Chania" /> </center>
+        <br></br>
+        <center><img src={dumbDon} alt="Flowers in Chania" /></center>
         <main>{children}</main>
         <footer style={{
-          marginTop: `2rem`
+          marginTop: `2rem`,          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}>
           © {new Date().getFullYear()}, Built with
           {` `}

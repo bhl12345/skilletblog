@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Skillet Blog`,
-    description: `Thoughts that will make the ill-informed skin burn `,
+    title: `The Pontificating Peasant`,
+    description: `Thoughts of a flabbergasted U.S. citizen`,
     author: `BHL`,
   },
   plugins: [
@@ -18,17 +18,24 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pontificating peasant`,
+        short_name: `pontifcate`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/`, // This path is relative to the root of the site.
+        icon: `src/images/pontificate.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
+	'gatsby-transformer-remark',
+	{
+		resolve: `gatsby-source-filesystem`,
+		options: {
+			name: `pages`,
+			path: `${__dirname}/src/pages/`
+		}
+	} ],
 }

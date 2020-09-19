@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-image/withIEPolyfill"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -15,22 +15,24 @@ import Img from "gatsby-image"
 
 const Image = () => {
   const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
+ query {
+    placeholderImage: file(relativePath: { eq: "pontificate.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 140, height: 167) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
+  }
   `)
 
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
+  if (!data?.placeholderImage?.childImageSharp?.fixed) {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fixed={data.placeholderImage.childImageSharp.fixed}/>
 }
 
 export default Image
