@@ -35,8 +35,7 @@ const Layout = ({ children }) => {
         }}>
       {data.site.siteMetadata?.description || `Description`} </h2>  
       <main>{children}</main>
-      <div>
-      
+      <div>     
      <center> <img src={logo} alt="Flowers in Chania" /> </center>
         <br></br>
         <center><img src={dumbDon} alt="Flowers in Chania" /></center>
