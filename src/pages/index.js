@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
               <Link to={frontmatter.path}>{frontmatter.title}</Link>
               &nbsp;
               <small>
-                {' '}
+                {'YO '}
                 <em>published on</em> {frontmatter.date}
               </small>
               <p>{frontmatter.excerpt}</p>
