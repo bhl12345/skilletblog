@@ -27,29 +27,27 @@ const Layout = ({ children }) => {
 
   return (
     < >
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`  } /> 
-      <h2 style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",      
-        }}>
-      {data.site.siteMetadata?.description || `Description`} </h2>  
-      <main>{children}</main>
-      <div>     
-     <center> <img src={logo} alt="Flowers in Chania" /> </center>
-        <br></br>
-        <center><img src={dumbDon} alt="Flowers in Chania" /></center>
-        
-        <footer style={{
-          marginTop: `2rem`,          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+    <div className="gridContainer">
+      <Header  siteTitle={data.site.siteMetadata?.title || `Title`  } />  
+      <div className="left" style={{backgroundColor:"#f1f1f1"}}>{children}</div>
+      <div className="middle" style={{backgroundColor:"#f1f1f1"}}>
+       <img src={logo} alt="Flowers in Chania" />   
+     <br></br>
+      <img src={dumbDon} alt="Flowers in Chania" /> 
+     </div>
+     <div className="right" style={{backgroundColor:"#ccc"}}>Column</div>
       </div>
+      <div>       
+      <footer style={{
+        marginTop: `2rem`,          display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.com">Gatsby</a>
+      </footer>
+    </div>
     </>
   )
 }
