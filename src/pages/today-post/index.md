@@ -1,9 +1,10 @@
 ---
 path: '/today-post'
-date: '2018-11-14'
-title: 'Hello World'
-tags: ['gatsby', '2018']
-excerpt: 'Hello World with Gatsby and React'
+date: '2020-09-22'
+title: 'Trump Crime Family'
+tags: ['Corrupt', '2020']
+excerpt: 'The most corrupt ... '
 ---
 
-My first Post
+The Trump crime family is the most corrupt in the history
+of the United States to hold political office.
