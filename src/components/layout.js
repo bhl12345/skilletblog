@@ -9,9 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import logo from "../images/pontificate.png"
 import dumbDon from "../images/dumbtrump.jpg"
 import "./layout.css"
+ 
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,8 +31,7 @@ const Layout = ({ children }) => {
     <div className="gridContainer">
     <Header style={{justifyContent: "left"}}  siteTitle={data.site.siteMetadata?.title || `Title`  } />
       <div className="left" style={{backgroundColor:"`#663399`"}}>{children}</div>
-      <div className="middle" >
-         <p> Trying to provide Truth to Combat the Poltical BS</p>    
+      <div className="middle" >    
      </div>
      <div className="right" style={{backgroundColor:"`#663399`"}}>
      <img src={dumbDon} alt="Flowers in Chania" /> 
