@@ -5,22 +5,21 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,    
-      display: `flex`,
-      justifyContent: `center`,
-      alignItems: `center`,
-      width: `100%`,
-     
-      
+    gridArea: "header",
+    background: "rebeccapurple",   
+    textAlign: "center",
+    fontSize: "25px",
+    
     }}
   >
     <div
+    
       style={{
-       
-        width: `100%`,
-        
+        margin: `0 auto`,
+        maxWidth: 960,
+        padding: `1.45rem 1.0875rem`,
         align:`center`,
-      }}
+      }} 
     >
       <h1 style={{ margin: 0 }}>
         <Link
@@ -34,6 +33,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+     
     </div>
   </header>
 )
