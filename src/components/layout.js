@@ -9,6 +9,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import dumbDon from "../images/dumbtrump.jpg"
+import RepubJesus from "../images/RepubJesus.jpg"
 import "./layout.css"
  
 
@@ -34,7 +35,8 @@ const Layout = ({ children }) => {
        <a href="https://usafacts.org/">USAFacts</a>
        <a href="https://www.snopes.com/">Check The Facts</a>
        </div>
-      <div className="middle" >{children}    
+      <div className="middle" >{children} 
+      <img src={RepubJesus} alt="Flowers in Chania" />
      </div>
      <div className="right" style={{backgroundColor:"`#663399`"}}>
      <img src={dumbDon} alt="Flowers in Chania" /> 
