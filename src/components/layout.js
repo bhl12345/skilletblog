@@ -1,7 +1,6 @@
 /**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
+ * Layout component that queries for data with Gatsby's useStaticQuery component
+ * 
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
@@ -30,11 +29,17 @@ const Layout = ({ children }) => {
     
     <div className="gridContainer">
     <Header style={{justifyContent: "left"}}  siteTitle={data.site.siteMetadata?.title || `Title`  } />
-      <div className="left" style={{backgroundColor:"`#663399`"}}>{children}</div>
-      <div className="middle" >    
+      <div className="left" style={{backgroundColor:"`#663399`"}}>
+       <h2>Resources of Facts</h2>
+       <a href="https://usafacts.org/">USAFacts</a>
+       <a href="https://www.snopes.com/">Check The Facts</a>
+       </div>
+      <div className="middle" >{children}    
      </div>
      <div className="right" style={{backgroundColor:"`#663399`"}}>
      <img src={dumbDon} alt="Flowers in Chania" /> 
+     	<a href="https://www.nytimes.com/interactive/2019/05/13/us/politics/trump-investigations.html?mtrref=www.google.com&assetType=REGIWALL">
+     New York Times Keeps Track of the Ivestigations related to Trump</a>
      </div>
       </div>
       <div>

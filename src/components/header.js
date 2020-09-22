@@ -9,6 +9,7 @@ const Header = ({ siteTitle }) => (
     background: "rebeccapurple",   
     textAlign: "center",
     fontSize: "25px",
+    width: "100%",
     
     }}
   >
