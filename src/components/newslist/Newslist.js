@@ -24,7 +24,7 @@
         console.log(this.state);
         return (
           <div>
-            Check out our blog:
+            Covid News from John Hopkins:
             {this.state.items.map(item => (
               <li key={item.guid}>
                 <a target="_blank" rel="noopener noreferrer" href={item.link}>
