@@ -23,11 +23,11 @@
       render() {
         console.log(this.state);
         return (
-          <div>
-            News from the New York Times:
+          <div >
+            <h2>News from the New York Times:</h2>
             {this.state.items.map(item => (
               <li key={item.guid}>
-                <a target="_blank" rel="noopener noreferrer" href={item.link}>
+                <a style={{color:`#663399`}} target="_blank" rel="noopener noreferrer" href={item.link}>
                   {item.title}
                 </a>
               </li>

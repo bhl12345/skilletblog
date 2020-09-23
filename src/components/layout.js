@@ -36,17 +36,16 @@ const Layout = ({ children }) => {
        <a href="https://www.snopes.com/">Check The Facts</a>
        </div>
       <div className="middle" >{children} 
- 
      </div>
-     <div>
-    <Newslist/>
+     <div style={{color:`#663399`}}>
+    <Newslist  />
      </div>
       </div>
       <div>
       <footer className="footer" >
       © {new Date().getFullYear()}, Built with
       {` `}
-      <a href="https://www.gatsbyjs.com">Gatsby</a>
+      <a style={{color:`#663399`}} href="https://www.gatsbyjs.com">Gatsby</a>
     </footer>
     </div>
 
