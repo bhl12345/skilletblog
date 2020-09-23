@@ -8,8 +8,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import dumbDon from "../images/dumbtrump.jpg"
 import "./layout.css"
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Newslist from "../components/newslist/Newslist"
  
 
 const Layout = ({ children }) => {
@@ -37,10 +38,8 @@ const Layout = ({ children }) => {
       <div className="middle" >{children} 
  
      </div>
-     <div className="right" style={{backgroundColor:"`#663399`"}}>
-     <img src={dumbDon} alt="Flowers in Chania" /> 
-     	<a href="https://www.nytimes.com/interactive/2019/05/13/us/politics/trump-investigations.html?mtrref=www.google.com&assetType=REGIWALL">
-     New York Times Keeps Track of the Ivestigations related to Trump</a>
+     <div>
+    <Newslist/>
      </div>
       </div>
       <div>
