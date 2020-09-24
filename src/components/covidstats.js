@@ -18,7 +18,7 @@ function Covidstats() {
     		    <div style={{
     		    color: `white`,
     		    float: `right`,
-    		    right: `0px`,
+    		    right: `10%`,
     		    width: `20%`,
     		    gridArea: `right`,
     		    display: `grid`,
@@ -32,31 +32,22 @@ function Covidstats() {
     		            background:`none`,
     		            border:`none`, 
     		            float: `right`,         
-    		            right: `0px`,
+    		            right: `10%`,
     	    		    display: `grid`,
     	    		    gridArea: `right`,            
     		             fontSize: `10px`,           
     		             top: `0px`,
-    		             right: `10px`,
-    		             width: `50%`,
+    		             right: `10%`,
+    		              
     		             color: `white`,
     		          }} className="fetch-button" onClick={fetchData}>
-    		          Click for current U.S. Death Total
+    		          U.S. Death Total Click Here.
     		        </button>
     		       
     		      </div>
 
     		      {/* Display data from API */}
-    		      <div style={{  
-    		  	        display: `grid`,
-	    		        gridArea: `right`,
-    		            textDecoration: `none`,
-    		             right: `10px`,       
-    		             fontSize: `15px`,           
-    		             top: `5px`, 
-    		             color: `white`,
-    		             float: `right`,
-		          }}className="deaths">
+    		      <div  className="deaths">
     		        {deaths &&
     		          [deaths].map((death, index) => {
     		            return (
