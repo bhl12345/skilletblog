@@ -30,9 +30,6 @@ body {
 .middle,
 .right {
   padding: 10px;
-  
-  
-  
 }
 
 /* Style the left column */
@@ -42,7 +39,7 @@ body {
   grid-area: 2 / 1 / 2 /2;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 50%;
   position:auto;
 }
 
@@ -65,7 +62,7 @@ body {
   justify-content: right;
   grid-area: 2 / 6 / 7/ 7;
   height: 100%;
-  width: 50%;
+   
   position:auto;
    
  
