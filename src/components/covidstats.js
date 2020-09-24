@@ -41,7 +41,7 @@ function Covidstats() {
     		              
     		             color: `white`,
     		          }} className="fetch-button" onClick={fetchData}>
-    		          U.S. Death Total Click Here.
+    		          U.S. Covid-19 Death Total Click Here.
     		        </button>
     		       
     		      </div>
