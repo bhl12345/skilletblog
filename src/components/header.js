@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
      <div>
-     <Covidstats />
+     <Covidstats  />
      </div>
     </div>
   </header>

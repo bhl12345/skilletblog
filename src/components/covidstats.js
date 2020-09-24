@@ -15,11 +15,23 @@ function Covidstats() {
 
  
       return (
-    		    <div className="">
-    		      <h2>Covid Deaths</h2>
+    		    <div style={{
+    		    backgroundcolor: `white`,
+    		    position: `absolute`,
+    		    right: `10px`,
+    		    width: `100px`,
+    		    gridArea: `right`,
+    		    display: `grid`,
+    		    top: `0px`,
+    		    
+    		       }} className="deaths">
+    		      <h3>Covid Deaths</h3>
     		      {/* Fetch data from API */}
     		      <div>
-    		        <button className="fetch-button" onClick={fetchData}>
+    		        <button style={{         
+    		            textDecoration: `none`,
+    		             align: `right`,
+    		          }} className="fetch-button" onClick={fetchData}>
     		          Click for current Death Total
     		        </button>
     		        <br />
@@ -31,8 +43,8 @@ function Covidstats() {
     		          [deaths].map((death, index) => {
     		            return (
     		              <div className="death" key={index}>
-    		                <h3>Death {index + 1}</h3>
-    		                <h2>{deaths.deaths}</h2>
+    		                <h4>Deaths</h4>
+    		                <h4>{deaths.deaths}</h4>
     		              </div>
     		            );
     		          })}
