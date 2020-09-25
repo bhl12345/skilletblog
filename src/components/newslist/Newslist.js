@@ -24,7 +24,8 @@
         console.log(this.state);
         return (
           <div >
-            <h2>Covid News</h2>
+            <h2>Covid Updates</h2>
+           
             {this.state.items.map(item => (
               <li key={item.guid}>
                 <a style={{color:`#663399`}} target="_blank" rel="noopener noreferrer" href={item.link}>
