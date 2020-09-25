@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Pontificating Peasant`,
-    description: `Thoughts of a flabbergasted U.S. citizen`,
+    description: `You Don't Need To Be Rich To Have A Say`,
     author: `BHL`,
   },
   plugins: [

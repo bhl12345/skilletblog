@@ -31,8 +31,9 @@ const Layout = ({ children }) => {
     
     <div className="gridContainer">
     <Header style={{justifyContent: "left"}}  siteTitle={data.site.siteMetadata?.title || `Title`  } />
-      <div className="left" style={{color:`#663399`}}>
-       <h2>Resources of Facts</h2>
+  
+    <div className="left" style={{color:`#663399`}}> 
+    <h2>Resources of Facts</h2>
        <a href="https://usafacts.org/">USAFacts</a>
        <a href="https://www.snopes.com/">Check The Facts</a>
        </div>
