@@ -11,7 +11,7 @@
       async componentDidMount() {
         try {
           const response = await fetch(
-            "https://api.rss2json.com/v1/api.json?rss_url=https://www.hopkinsmedicine.org/news/media/releases/?format=rss"
+            "https://api.rss2json.com/v1/api.json?rss_url=https://www.cidrap.umn.edu/news/178636/rss"
           );
           const json = await response.json();
           this.setState({ items: json.items });
@@ -24,7 +24,7 @@
         console.log(this.state);
         return (
           <div >
-            <h2>Covid News From John Hopkins</h2>
+            <h2>Covid News</h2>
             {this.state.items.map(item => (
               <li key={item.guid}>
                 <a style={{color:`#663399`}} target="_blank" rel="noopener noreferrer" href={item.link}>
