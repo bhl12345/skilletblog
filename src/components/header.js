@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Covidstats from "./covidstats"
 
+
 const Header = ({ siteTitle }) => (
   <header
     style={{

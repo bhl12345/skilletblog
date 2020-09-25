@@ -12,6 +12,7 @@ import "./layout.css"
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Newslist from "../components/newslist/Newslist"
  
+ 
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,6 +40,7 @@ const Layout = ({ children }) => {
      </div>
      <div style={{color:`#663399`}}>
     <Newslist  />
+    <br/>
      </div>
       </div>
       <div>

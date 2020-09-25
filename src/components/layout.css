@@ -38,9 +38,10 @@ body {
   display: grid;
   grid-area: 2 / 1 / 2 /2;
   justify-content: center;
-  height: 100%;
+  height: auto;
   width: 50%;
   position:auto;
+  
 }
 
 /* Style the middle column */

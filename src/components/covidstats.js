@@ -47,6 +47,7 @@ function Covidstats() {
     		      </div>
 
     		      {/* Display data from API */}
+    		     
     		      <div  className="deaths">
     		        {deaths &&
     		          [deaths].map((death, index) => {
