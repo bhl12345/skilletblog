@@ -22,8 +22,7 @@ body {
     'header header header header header header' 
     'left middle middle middle middle right' 
     'footer footer footer footer footer footer';
-   
-  grid-column-gap: 10px;  
+     grid-column-gap: 10px;  
 } 
 
 .left,
@@ -36,10 +35,10 @@ body {
 .left {
   grid-area: left;
   display: grid;
-  grid-area: 2 / 1 / 2 /2;
+ 
   justify-content: center;
   height: auto;
-  width: 50%;
+  width: 80%;
   position:auto;
   
 }

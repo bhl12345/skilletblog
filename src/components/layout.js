@@ -9,8 +9,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import Newslist from "../components/newslist/Newslist"
+import Sidebar from "../components/sidebar"
  
  
 
@@ -33,9 +33,7 @@ const Layout = ({ children }) => {
     <Header style={{justifyContent: "left"}}  siteTitle={data.site.siteMetadata?.title || `Title`  } />
   
     <div className="left" style={{color:`#663399`}}> 
-    <h2>Resources of Facts</h2>
-       <a href="https://usafacts.org/">USAFacts</a>
-       <a href="https://www.snopes.com/">Check The Facts</a>
+    <Sidebar />
        </div>
       <div className="middle" >{children} 
      </div>
