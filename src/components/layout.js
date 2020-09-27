@@ -11,7 +11,8 @@ import Header from "./header"
 import "./layout.css"
 import Newslist from "../components/newslist/Newslist"
 import Sidebar from "../components/sidebar"
-import Corrupt from "../images/quote-the-downfall.jpg"
+import NoMan from "../images/NoMan.jpg"
+import CCF from "../pages/climatechangefeed"
  
  
 
@@ -37,9 +38,10 @@ const Layout = ({ children }) => {
     <Sidebar />
        </div>
       <div className="middle" >{children} 
-      <img src={Corrupt} alt="Corrupt" />;
+      <img src={NoMan} alt="Corrupt" />;
      </div>
      <div style={{color:`#663399`}}>
+     <CCF/>
     <Newslist  />
     <br/>
      </div>

@@ -17,8 +17,8 @@ export default class Sidebar extends Component {
             <br/>
               <span className="email"><i></i>bhl12345@pontificating-peasant.com</span>
             </div>
-            <nav id="colorlib-main-menu" role="navigation" className="navbar">
-              <div id="navbar" className="collapse">
+            <nav >
+              <div>
                 <ul>
                 <h3>Resources of Facts</h3>
                 <a href="https://usafacts.org/">USAFacts</a>
