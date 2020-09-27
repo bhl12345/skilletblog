@@ -3,6 +3,8 @@
  */
 import React, { Component } from 'react'
 import Logo from "../images/pontificate.png"
+import NFL from "../pages/categories/NFLFeed"
+import { Link } from 'react-router';
 
 export default class Sidebar extends Component {
   render() {
@@ -19,6 +21,7 @@ export default class Sidebar extends Component {
             </div>
             <nav >
               <div>
+ 
                 <ul>
                 <h3>Resources of Facts</h3>
                 <a href="https://usafacts.org/">USAFacts</a>
