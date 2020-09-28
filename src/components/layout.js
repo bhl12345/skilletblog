@@ -13,7 +13,7 @@ import Newslist from "../components/newslist/Newslist"
 import Sidebar from "../components/sidebar"
 import NoMan from "../images/NoMan.jpg"
 import CCF from "../pages/climatechangefeed"
-import NFL from "../pages/categories/NFLFeed"
+ 
  
  
 
@@ -37,7 +37,6 @@ const Layout = ({ children }) => {
   
     <div className="left" style={{color:`#663399`}}> 
     <Sidebar />
-    <NFL/>
        </div>
       <div className="middle" >{children} 
       <img src={NoMan} alt="Corrupt" />;

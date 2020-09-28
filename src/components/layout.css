@@ -35,7 +35,6 @@ body {
 .left {
   grid-area: left;
   display: grid;
- 
   justify-content: center;
   height: auto;
   width: 85%;
