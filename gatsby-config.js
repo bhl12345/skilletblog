@@ -3,6 +3,7 @@ module.exports = {
     title: `The Pontificating Peasant`,
     description: `You Don't Need To Be Rich To Have A Say`,
     author: `BHL`,
+    siteUrl: `https://www.pontificating-peaseant.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +14,27 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [
+            {
+              resolve: `gatsby-remark-images`,
+              options: {
+                maxWidth: 740,
+                wrapperStyle: `margin-bottom: 2.2rem;`,
+              },
+            },
+            {
+              resolve: `gatsby-remark-responsive-iframe`,
+              options: {
+                wrapperStyle: `margin-bottom: 2.2rem;`,
+              },
+            },
+          ],
+        },
+      },
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

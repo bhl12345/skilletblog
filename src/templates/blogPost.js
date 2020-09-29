@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
+import Logo from "../images/TrumpTaxFraud.jpg"
+import Img from "gatsby-image"
 
 const blogPost = ({ data, pathContext }) => {
   const title = data.markdownRemark.frontmatter.title
@@ -12,10 +14,11 @@ const blogPost = ({ data, pathContext }) => {
    <Layout> 
     <div>
       <h1>{title}</h1>
+      <Img fluid={Logo} />
       <div>
         <em>{date}</em>
       </div>
-
+      
       <br />
       <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
       <p>
@@ -39,18 +42,18 @@ const blogPost = ({ data, pathContext }) => {
 }
 
 export const postQuery = graphql`
-  query($pathSlug: String!) {
-    markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM, DD, YYYY")
-        path
-        tags
-        excerpt
-      }
+query($pathSlug: String!) {
+  markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
+    html
+    frontmatter {
+      title
+      date(formatString: "MMMM, DD, YYYY")
+      path
+      tags
+      excerpt
     }
   }
+}
 `
 
 export default blogPost
