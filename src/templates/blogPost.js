@@ -22,17 +22,16 @@ const blogPost = ({ data, pathContext }) => {
         {prev && (
           <Link to={prev.frontmatter.path}>
             {prev.frontmatter.title} <span role="img" aria-label="point-left">👈 </span>Previous
-          </Link>
-            
+          </Link>          
         )}
-        <div class="fb-comments" data-href="https://www.pontificating-peasant.com" data-numposts="5" data-width=""></div>
-      </p>    
-      <p>
+        <div class="fb-comments" data-href="https://www.pontificating-peasant.com" data-numposts="5" data-width="50%"></div>
+      </p>        
+      <p>     
         {next && (
           <Link to={next.frontmatter.path}>
             Next <span role="img" aria-label="point-right">👉</span>
             {next.frontmatter.title}
-          </Link>
+          </Link>     
         )}
       </p>
     </div>
