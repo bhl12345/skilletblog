@@ -14,11 +14,9 @@ const blogPost = ({ data, pathContext }) => {
    <Layout> 
     <div>
       <h1>{title}</h1>
-      <Img fluid={Logo} />
       <div>
         <em>{date}</em>
-      </div>
-      
+      </div> 
       <br />
       <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
       <p>
@@ -28,6 +26,7 @@ const blogPost = ({ data, pathContext }) => {
           </Link>
         )}
       </p>
+      <div class="fb-comments" data-href="https://www.pontificating-peasant.com" data-numposts="5" data-width=""> </div>
       <p>
         {next && (
           <Link to={next.frontmatter.path}>

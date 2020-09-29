@@ -39,9 +39,10 @@ const Layout = ({ children }) => {
     <Sidebar />
        </div>
       <div className="middle" >{children} 
-      <img src={DemoFailed} alt="Corrupt" />
+      
     	  </div>
      <div style={{color:`#663399`}}>
+     <img style={{height:`relative`, width:`relative`, position:`auto`}} src={DemoFailed} alt="Corrupt" />
      <CCF/>
     <Newslist  />
     <br/>
