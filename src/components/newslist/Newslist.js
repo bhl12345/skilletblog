@@ -27,11 +27,15 @@
             <h2>Covid Updates</h2>
            
             {this.state.items.map(item => (
-              <li key={item.guid}>
+            <ul>
+              <li key={item.guid}>  
                 <a style={{color:`#663399`}} target="_blank" rel="noopener noreferrer" href={item.link}>
                   {item.title}
+                  <br/>
                 </a>
+                
               </li>
+              </ul>
             ))}
           </div>
         );
