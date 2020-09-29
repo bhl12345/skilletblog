@@ -1,8 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
-import Logo from "../images/TrumpTaxFraud.jpg"
-import Img from "gatsby-image"
+
 
 const blogPost = ({ data, pathContext }) => {
   const title = data.markdownRemark.frontmatter.title
@@ -24,9 +23,10 @@ const blogPost = ({ data, pathContext }) => {
           <Link to={prev.frontmatter.path}>
             {prev.frontmatter.title} <span role="img" aria-label="point-left">👈 </span>Previous
           </Link>
+            
         )}
-      </p>
-      <div class="fb-comments" data-href="https://www.pontificating-peasant.com" data-numposts="5" data-width=""> </div>
+        <div class="fb-comments" data-href="https://www.pontificating-peasant.com" data-numposts="5" data-width=""></div>
+      </p>    
       <p>
         {next && (
           <Link to={next.frontmatter.path}>
