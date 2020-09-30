@@ -46,8 +46,8 @@ module.exports = {
     	            port: 27017
     	        },
     	        auth: {
-    	            user: 'bhl12345',
-    	            password: 'Me123-456'
+    	            user: ' ',
+    	            password: ' '
     	        },
     	        extraParams: {
     	            replicaSet: 'ATLAS-IBA4RN-SHARD-0',
