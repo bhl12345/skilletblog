@@ -32,8 +32,7 @@
                 <a style={{color:`#663399`}} target="_blank" rel="noopener noreferrer" href={item.link}>
                   {item.title}
                   <br/>
-                </a>
-                
+                </a>         
               </li>
               </ul>
             ))}

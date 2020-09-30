@@ -23,8 +23,7 @@ const blogPost = ({ data, pathContext }) => {
           <Link to={prev.frontmatter.path}>
             {prev.frontmatter.title} <span role="img" aria-label="point-left">👈 </span>Previous
           </Link>          
-        )}
-        <div class="fb-comments" data-href="https://www.pontificating-peasant.com" data-numposts="5" data-width="50%"></div>
+        )}      
       </p>        
       <p>     
         {next && (
