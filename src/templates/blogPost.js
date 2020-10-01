@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
+import CBox from '../components/CommentBox'
 
 
 const blogPost = ({ data, pathContext }) => {
@@ -24,7 +25,8 @@ const blogPost = ({ data, pathContext }) => {
             {prev.frontmatter.title} <span role="img" aria-label="point-left">👈 </span>Previous
           </Link>          
         )}      
-      </p>        
+      </p> 
+      <CBox/>
       <p>     
         {next && (
           <Link to={next.frontmatter.path}>

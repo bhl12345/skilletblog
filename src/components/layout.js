@@ -11,6 +11,7 @@ import Header from "./header"
 import "./layout.css"
 import Newslist from "../components/newslist/Newslist"
 import Sidebar from "../components/sidebar"
+import FactCheck from "../components/FactCheckfeed"
 import DemoFailed from "../images/Essay-on-Democracy-has-Failed.png"
 import CCF from "../pages/climatechangefeed"
  
@@ -38,11 +39,12 @@ const Layout = ({ children }) => {
     <div className="left" style={{color:`#663399`}}> 
     <Sidebar />
        </div>
-      <div className="middle" >{children} 
-      
-    	  </div>
+      <div className="middle" >{children}
+    </div>
      <div style={{color:`#663399`}}>
-     <img style={{height:`relative`, width:`relative`, position:`auto`}} src={DemoFailed} alt="Corrupt" />
+     <img style={{height:`15vw`, width:`25vw`, position:`right`}} src={DemoFailed} alt="Corrupt" />
+     <FactCheck/>
+     <br/>
      <CCF/>
     <Newslist  />
     <br/>
