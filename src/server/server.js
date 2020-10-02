@@ -1,45 +1,77 @@
-let express = require('express');
-let mongoose = require('mongoose');
-let cors = require('cors');
-let bodyParser = require('body-parser');
-let database = require('./database/db');
+'use strict'
+var express = require('express');
+var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
+var Comment = require('../components/comments');
 
+var app = express();
+var router = express.Router();
 
-const commentRoute = require('../server/routes/comment-routes')
+var port = process.env.API_PORT || 3001;
 
+var mongoDB = 'mongodb://bhl12345:Me123-456@pontificatingpeasant-shard-00-02.mkwnc.mongodb.net:27017/admin?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=true';
+mongoose.connect(mongoDB)
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-mongoose.Promise = global.Promise;
-mongoose.connect(database.db, {
-    useNewUrlParser: true
-}).then(() => {
-    console.log('Database connected sucessfully !')
-},
-    error => {
-        console.log('Database could not be connected : ' + error)
-    }
-)
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-const server = express();
-server.use(bodyParser.json());
-server.use(bodyParser.urlencoded({
-    extended: true
-}));
-server.use(cors());
-server.use('/comments', commentRoute)
-
-
-const port = process.env.PORT || 4000;
- server.listen(port, () => {
-    console.log('Connected to port ' + port)
-})
-
-// Error Handling
-server.use((req, res, next) => {
-    next(createError(404));
+app.use(function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
+  res.setHeader('Cache-Control', 'no-cache');
+  next();
+});
+router.get('/', function(req, res) {
+  res.json({ message: 'API Initialized!'});
 });
 
-server.use(function (err, req, res, next) {
-    console.error(err.message);
-    if (!err.statusCode) err.statusCode = 500;
-    res.status(err.statusCode).send(err.message);
+router.route('/comments')
+  .get(function(req, res) {
+    Comment.find(function(err, comments) {
+      if (err)
+        res.send(err);
+      res.json(comments)
+    });
+  })
+  .post(function(req, res) {
+    var comment = new Comment();
+    (req.body.author) ? comment.author = req.body.author : null;
+    (req.body.text) ? comment.text = req.body.text : null;
+
+    comment.save(function(err) {
+      if (err)
+        res.send(err);
+      res.json({ message: 'Comment successfully added!' });
+    });
+  });
+
+router.route('/comments/:comment_id')
+  .put(function(req, res) {
+    Comment.findById(req.params.comment_id, function(err, comment) {
+      if (err)
+        res.send(err);
+      (req.body.author) ? comment.author = req.body.author : null;
+      (req.body.text) ? comment.text = req.body.text : null;
+      comment.save(function(err) {
+        if (err)
+          res.send(err);
+        res.json({ message: 'Comment has been updated' });
+      });
+    });
+  })
+  .delete(function(req, res) {
+    Comment.remove({ _id: req.params.comment_id }, function(err, comment) {
+      if (err)
+        res.send(err);
+      res.json({ message: 'Comment has been deleted' })
+    })
+  });
+
+app.use('/api', router);
+app.listen(port, function() {
+  console.log(`api running on port ${port}`);
 });

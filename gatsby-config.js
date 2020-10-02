@@ -53,7 +53,8 @@ module.exports = {
     	            replicaSet: 'ATLAS-IBA4RN-SHARD-0',
     	            ssl: true,
     	            authSource: 'admin',
-    	            retryWrites: true
+    	            retryWrites: true,
+    	            useUnifiedTopology: true
     	        }
     	    }
     	},

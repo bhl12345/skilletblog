@@ -1,31 +1,30 @@
 // CommentList.js
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import Comment from './Comment';
+ 
 
-const CommentList = (props) => {
-  const commentNodes = props.data.map(comment => (
-    <Comment author={comment.author} key={comment._id} id={comment._id}>
-      { comment.text}
-    </Comment>
-  ));
-  return (
-    <div>
-      { commentNodes }
-    </div>
-  );
-};
-
-CommentList.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
-    author: PropTypes.string,
-    id: PropTypes.string,
-    text: PropTypes.string,
-  })),
-};
-
-CommentList.defaultProps = {
-  data: [],
-};
+class CommentList extends Component {
+  render() {
+    let commentNodes = this.props.data.map(comment => {
+      return (
+        <Comment
+          author={ comment.author }
+          uniqueID={ comment['_id'] }
+          onCommentDelete={ this.props.onCommentDelete }
+          onCommentUpdate={ this.props.onCommentUpdate }
+          key={ comment.id }>
+          { comment.text }
+        </Comment>
+      )
+    })
+    return (
+      <div>
+        { commentNodes }
+      </div>
+    )
+  }
+}
 
 export default CommentList;
+
+ 
