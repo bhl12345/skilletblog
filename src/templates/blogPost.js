@@ -19,6 +19,7 @@ const blogPost = ({ data, pathContext }) => {
       </div> 
       <br />
       <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
+       <CBox/>
       <p>
         {prev && (
           <Link to={prev.frontmatter.path}>
@@ -26,7 +27,7 @@ const blogPost = ({ data, pathContext }) => {
           </Link>          
         )}      
       </p> 
-      <CBox/>
+     
       <p>     
         {next && (
           <Link to={next.frontmatter.path}>

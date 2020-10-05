@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `The Pontificating Peasant`,
-    description: `You Don't Need To Be Rich To Have A Say`,
+    description: `You Do Not Need To Be Rich To Have A Say`,
     author: `BHL`,
     siteUrl: `https://www.pontificating-peaseant.com/`,
   },
@@ -36,23 +36,23 @@ module.exports = {
       },
       {
     	    // The name of the plugin
-    	    resolve: 'gatsby-source-mongodb',
+    	    resolve: `gatsby-source-mongodb`,
     	    options: {
     	        // Name of the database and collection where are books reside
-    	        dbName: 'pontificatingpeasant',
-    	        collection: 'pontificatingpeasant',
+    	        dbName: `pontificatingpeasant`,
+    	        collection: `pontificatingpeasant`,
     	        server: {
-    	            address: 'pontificatingpeasant-shard-00-02.mkwnc.mongodb.net',
+    	            address: `pontificatingpeasant-shard-00-02.mkwnc.mongodb.net`,
     	            port: 27017
     	        },
     	        auth: {
-    	            user: 'bhl12345',
-    	            password: 'Me123-456'
+    	            user: `bhl12345`,
+    	            password: `Me123-456`
     	        },
     	        extraParams: {
-    	            replicaSet: 'ATLAS-IBA4RN-SHARD-0',
+    	            replicaSet: `ATLAS-IBA4RN-SHARD-0`,
     	            ssl: true,
-    	            authSource: 'admin',
+    	            authSource: `admin`,
     	            retryWrites: true,
     	            useUnifiedTopology: true
     	        }
@@ -77,7 +77,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-	'gatsby-transformer-remark',
+	`gatsby-transformer-remark`,
 	{
 		resolve: `gatsby-source-filesystem`,
 		options: {

@@ -1,53 +1,49 @@
-// CommentForm.js
-import React, { Component } from 'react';
- 
+import React from "react"
 
-class CommentForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { author: '', text: '' };
-    this.handleAuthorChange = this.handleAuthorChange.bind(this);
-    this.handleTextChange = this.handleTextChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+export default class IndexPage extends React.Component {
+  state = {
+    firstName: "",
+    comment: "",
   }
-  handleAuthorChange(e) {
-    this.setState({ author: e.target.value });
+
+  handleInputChange = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
+
+    this.setState({
+      [name]: value,
+    })
   }
-  handleTextChange(e) {
-    this.setState({ text: e.target.value });
+
+  handleSubmit = event => {
+    event.preventDefault()
+    alert(`Welcome ${this.state.firstName} ${this.state.lastName}!`)
   }
-  handleSubmit(e) {
-    e.preventDefault();
-    let author = this.state.author.trim();
-    let text = this.state.text.trim();
-    if (!text || !author) {
-      return;
-    }
-    this.props.onCommentSubmit({ author: author, text: text });
-    this.setState({ author: '', text: '' });
-  }
+
   render() {
     return (
-      <form   onSubmit={ this.handleSubmit }>
-        <input
-          type='text'
-          placeholder='Your name...'
-          
-          value={ this.state.author }
-          onChange={ this.handleAuthorChange } />
-        <input
-          type='text'
-          placeholder='Say something...'
-         
-          value={ this.state.text }
-          onChange={ this.handleTextChange } />
-        <input
-          type='submit'
-       
-          value='Post'/>
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          First name
+          <input
+            type="text"
+            name="firstName"
+            value={this.state.firstName}
+            onChange={this.handleInputChange}
+          />
+        </label>
+        <label>
+          Comment
+          <input
+            type="text"
+            name="comment"
+            value={this.state.comment}
+            onChange={this.handleInputChange}
+          />
+        </label>
+        <button type="submit">Submit</button>
       </form>
     )
   }
 }
-
-export default CommentForm;
