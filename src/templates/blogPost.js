@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
-import CBox from '../components/CommentBox'
+ 
 
 
 const blogPost = ({ data, pathContext }) => {
@@ -19,7 +19,7 @@ const blogPost = ({ data, pathContext }) => {
       </div> 
       <br />
       <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
-       <CBox/>
+       
       <p>
         {prev && (
           <Link to={prev.frontmatter.path}>

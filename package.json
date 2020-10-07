@@ -5,12 +5,12 @@
   "version": "0.1.0",
   "author": "Brad Luken",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "axios": "^0.20.0",
-    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
     "cors-anywhere": "^0.4.3",
     "express": "^4.17.1",
-    "foreman": "^3.0.1",
     "formik": "^2.1.5",
     "gatsby": "^2.24.61",
     "gatsby-image": "^2.4.20",
@@ -25,13 +25,9 @@
     "gatsby-source-mongodb": "^2.3.12",
     "gatsby-transformer-remark": "^2.8.35",
     "gatsby-transformer-sharp": "^2.5.16",
-    "marked": "^1.2.0",
     "mobx": "^5.15.7",
     "mobx-react": "^6.3.0",
     "mongodb": "^3.6.2",
-    "mongoose": "^5.10.7",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.4",
     "prop-types": "^15.7.2",
     "querystring": "^0.2.0",
     "react": "^16.12.0",
@@ -41,6 +37,7 @@
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.2.0",
     "rss-parser": "^3.9.0",
+    "socket.io-client": "^2.3.1",
     "whatwg-fetch": "^3.4.1",
     "yup": "^0.29.3"
   },
@@ -59,9 +56,11 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "start-server": "cd backend && nodemon server.js --exec babel-node --presets es2015,stage-0"
+    "start:server": "cd backend && nodemon server.js --exec babel-node --presets es2015,stage-0"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
-}
+  },
+  "proxy": "http://localhost:5000"
+} 
+

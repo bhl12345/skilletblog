@@ -2,8 +2,8 @@ import React from "react"
 
 export default class IndexPage extends React.Component {
   state = {
-    firstName: "",
-    comment: "",
+    author: "",
+    text: "",
   }
 
   handleInputChange = event => {
@@ -18,7 +18,7 @@ export default class IndexPage extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    alert(`Welcome ${this.state.firstName} ${this.state.lastName}!`)
+    alert(`Welcome ${this.state.author} ${this.state.text}!`)
   }
 
   render() {
@@ -28,8 +28,8 @@ export default class IndexPage extends React.Component {
           First name
           <input
             type="text"
-            name="firstName"
-            value={this.state.firstName}
+            name="author"
+            value={this.state.author}
             onChange={this.handleInputChange}
           />
         </label>
@@ -38,7 +38,7 @@ export default class IndexPage extends React.Component {
           <input
             type="text"
             name="comment"
-            value={this.state.comment}
+            value={this.state.text}
             onChange={this.handleInputChange}
           />
         </label>

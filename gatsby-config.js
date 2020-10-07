@@ -38,7 +38,7 @@ module.exports = {
     	    // The name of the plugin
     	    resolve: `gatsby-source-mongodb`,
     	    options: {
-    	        // Name of the database and collection where are books reside
+    	        // Name of the database and collection where are comments reside reside
     	        dbName: `pontificatingpeasant`,
     	        collection: `pontificatingpeasant`,
     	        server: {
@@ -49,6 +49,9 @@ module.exports = {
     	            user: `bhl12345`,
     	            password: `Me123-456`
     	        },
+    	        map: {
+    	            documents: { body: `text` },
+    	          },
     	        extraParams: {
     	            replicaSet: `ATLAS-IBA4RN-SHARD-0`,
     	            ssl: true,

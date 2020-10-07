@@ -45,8 +45,8 @@ const Layout = ({ children }) => {
      <img style={{height:`15vw`, width:`25vw`, position:`right`}} src={DemoFailed} alt="Corrupt" />
      <FactCheck/>
      <br/>
-     <CCF/>
-    <Newslist  />
+     <Newslist  />
+     <CCF/>    
     <br/>
      </div>
       </div>
