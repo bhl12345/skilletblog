@@ -12,6 +12,8 @@ const useStyles = makeStyles(theme => ({
   appBar: {
     bottom: 0,
     top: 'auto',
+    backgroundColor: '#663399',
+    
   },
   inputContainer: {
     backgroundColor: fade(theme.palette.common.white, 0.15),
@@ -22,6 +24,7 @@ const useStyles = makeStyles(theme => ({
     marginLeft: theme.spacing(1),
     position: 'relative',
     width: '100%',
+    
   },
   icon: {
     width: theme.spacing(7),
@@ -45,8 +48,8 @@ export default function BottomBar(props) {
   const classes = useStyles();
 
   return (
-    <AppBar position="fixed" className={classes.appBar}>
-      <Toolbar>
+    <AppBar  position="relative" className={classes.appBar}>
+      <Toolbar >
         <div className={classes.inputContainer} style={{maxWidth: '200px'}}>
           <div className={classes.icon}>
             <FaceIcon />

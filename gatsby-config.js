@@ -34,33 +34,6 @@ module.exports = {
           ],
         },
       },
-      {
-    	    // The name of the plugin
-    	    resolve: `gatsby-source-mongodb`,
-    	    options: {
-    	        // Name of the database and collection where are comments reside reside
-    	        dbName: `pontificatingpeasant`,
-    	        collection: `pontificatingpeasant`,
-    	        server: {
-    	            address: `pontificatingpeasant-shard-00-02.mkwnc.mongodb.net`,
-    	            port: 27017
-    	        },
-    	        auth: {
-    	            user: `bhl12345`,
-    	            password: `Me123-456`
-    	        },
-    	        map: {
-    	            documents: { body: `text` },
-    	          },
-    	        extraParams: {
-    	            replicaSet: `ATLAS-IBA4RN-SHARD-0`,
-    	            ssl: true,
-    	            authSource: `admin`,
-    	            retryWrites: true,
-    	            useUnifiedTopology: true
-    	        }
-    	    }
-    	},
     
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

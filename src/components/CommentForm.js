@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component {
           Comment
           <input
             type="text"
-            name="comment"
+            name="text"
             value={this.state.text}
             onChange={this.handleInputChange}
           />
