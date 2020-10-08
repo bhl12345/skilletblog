@@ -27,7 +27,6 @@
     "gatsby-transformer-sharp": "^2.5.16",
     "mobx": "^5.15.7",
     "mobx-react": "^6.3.0",
-    "mongodb": "^3.6.2",
     "prop-types": "^15.7.2",
     "querystring": "^0.2.0",
     "react": "^16.12.0",
@@ -61,6 +60,5 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "proxy": "http://localhost:5000"
-} 
-
+  "proxy": "http://localhost:3000"
+}
