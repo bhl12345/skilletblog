@@ -23,13 +23,6 @@ client.connect(err => {
     .then(result => {
       console.log(result)
     })
-    app.post('/pontificationpeasant', (req, res) => {
-  collection.insertOne(req.body)
-    .then(result => {
-      console.log(result)
-    })
-    .catch(error => console.error(error))
-})
   app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
   // Note: __dirname is the current directory you're in. Try logging it and see what you get!
