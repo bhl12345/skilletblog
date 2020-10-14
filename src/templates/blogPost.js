@@ -19,7 +19,7 @@ const blogPost = ({ data, pathContext }) => {
       </div> 
       <br />
       <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
-       <CBox/>
+      
       <p>
         {prev && (
           <Link to={prev.frontmatter.path}>
