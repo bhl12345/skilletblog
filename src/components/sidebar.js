@@ -24,7 +24,6 @@ export default class Sidebar extends Component {
                 <h3>Vote or Create a poll question</h3>
                 <a href= "https://polling-app-client.herokuapp.com/">Peasant Polls</a>
                 <h3>Resources</h3>
- 
                 <a href="https://usafacts.org/">USAFacts</a>
                 <br/>
                 <br/>
