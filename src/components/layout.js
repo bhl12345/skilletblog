@@ -42,7 +42,6 @@ const Layout = ({ children }) => {
       <div className="middle" >{children}
     </div>
      <div style={{color:`#663399`}}>
-     <img style={{height:`15vw`, width:`25vw`, position:`right`}} src={DemoFailed} alt="Corrupt" />
      <FactCheck/>
      <br/>
      <Newslist  />
