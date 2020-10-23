@@ -12,7 +12,6 @@ import "./layout.css"
 import Newslist from "../components/newslist/Newslist"
 import Sidebar from "../components/sidebar"
 import FactCheck from "../components/FactCheckfeed"
-import DemoFailed from "../images/Essay-on-Democracy-has-Failed.png"
 import CCF from "../pages/climatechangefeed"
  
  

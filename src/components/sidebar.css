@@ -1,0 +1,15 @@
+.left {
+  grid-area: left;
+  display: grid;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  position:auto;
+  
+}
+
+.li{
+  height: auto;
+  width: auto;
+  position:auto;
+}
