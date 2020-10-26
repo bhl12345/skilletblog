@@ -13,7 +13,7 @@ import Newslist from "../components/newslist/Newslist"
 import Sidebar from "../components/sidebar"
 import FactCheck from "../components/FactCheckfeed"
 import CCF from "../pages/climatechangefeed"
- 
+import Logo from "../images/3kinds.jpg"
  
  
 
@@ -37,8 +37,9 @@ const Layout = ({ children }) => {
   
     <div className="left" style={{color:`#663399`}}> 
     <Sidebar />
-       </div>
-      <div className="middle" >{children}
+       </div>     
+     <div className="middle" >{children} 
+     
     </div>
      <div style={{color:`#663399`}}>
      <FactCheck/>

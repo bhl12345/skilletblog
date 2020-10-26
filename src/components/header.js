@@ -36,7 +36,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-  
+      <h3 style={{
+          color: `white`, 
+        }}>You don't have to be rich to have a view that matters.</h3>
     </div>
   </header>
 )
