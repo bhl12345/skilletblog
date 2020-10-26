@@ -27,8 +27,7 @@ const blogPost = ({ data, pathContext }) => {
             {prev.frontmatter.title} <span role="img" aria-label="point-left">👈 </span>Previous
           </Link>          
         )}      
-      </p> 
-     
+      </p>  
       <p>     
         {next && (
           <Link to={next.frontmatter.path}>
