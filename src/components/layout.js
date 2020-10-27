@@ -14,6 +14,7 @@ import Sidebar from "../components/sidebar"
 import FactCheck from "../components/FactCheckfeed"
 import CCF from "../pages/climatechangefeed"
 import Logo from "../images/3kinds.jpg"
+import HyvorTalk from 'hyvor-talk-react'
  
  
 
@@ -41,6 +42,7 @@ const Layout = ({ children }) => {
      <iframe width="560" height="315" src="https://www.youtube.com/embed/52o7luQW6C8" 
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
+        <HyvorTalk.Embed websiteId={2222} loadMode="scroll" />
     </div>
    
      <div style={{padding: "20px"}}>{children}</div>
