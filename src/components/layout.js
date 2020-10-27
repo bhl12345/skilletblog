@@ -39,13 +39,16 @@ const Layout = ({ children }) => {
     <Sidebar />  
        </div>     
      <div className="middle" >
+	 <p>The lyrics couldn't be more accurate for our current times. That is why people are "Taking it to the Streets"
+	 </p>
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/s_dUQAZQ2vE" frameborder="0" 
+		 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+	     allowfullscreen></iframe>
+	     <br/>
+     <h3>Watch and see why it is alot harder than it should be</h3>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/xtdU5RPDZqI"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     		 allowfullscreen></iframe>
-    		 <br/>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/52o7luQW6C8" 
-    	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
     </div>
      <div style={{padding: "20px"}}>{children}</div>
      <div style={{color:`#663399`}}>
