@@ -9,6 +9,7 @@ const blogPost = ({ data, pathContext }) => {
   const title = data.markdownRemark.frontmatter.title
   const date = data.markdownRemark.frontmatter.date
   const html = data.markdownRemark.html
+ 
   const { next, prev } = pathContext
 
   return (

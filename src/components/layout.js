@@ -34,13 +34,17 @@ const Layout = ({ children }) => {
     
     <div className="gridContainer">
     <Header style={{justifyContent: "left"}}  siteTitle={data.site.siteMetadata?.title || `Title`  } />
-  
-    <div className="left" style={{color:`#663399`}}> 
-    <Sidebar />
+    <div className="left" style={{color:`#663399`}}>
+    <Sidebar />  
        </div>     
-     <div className="middle" >{children} 
-     
+     <div className="middle" >
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/52o7luQW6C8" 
+    	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
     </div>
+   
+     <div style={{padding: "20px"}}>{children}</div>
+    
      <div style={{color:`#663399`}}>
      <FactCheck/>
      <br/>
