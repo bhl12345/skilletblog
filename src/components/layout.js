@@ -41,14 +41,14 @@ const Layout = ({ children }) => {
      <div className="middle" >
 	 <h3>The lyrics couldn't be more accurate for our current times. That is why people are "Taking it to the Streets"
 	 </h3>
-	 <iframe width="560" height="315" src="https://www.youtube.com/embed/s_dUQAZQ2vE" frameborder="0" 
+	 <iframe width="560" height="315" src="https://www.youtube.com/embed/yBzlH5fIwEw" frameborder="0" 
 		 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-	     allowfullscreen></iframe>
+		 allowfullscreen></iframe>
 	     <br/>
      <h3>Watch and see why it is alot harder than it should be</h3>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/xtdU5RPDZqI"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    		 allowfullscreen></iframe>
+    	 allowfullscreen></iframe>
     </div>
      <div style={{padding: "20px"}}>{children}</div>
      <div style={{color:`#663399`}}>
