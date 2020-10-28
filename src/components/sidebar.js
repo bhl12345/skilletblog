@@ -16,7 +16,7 @@ export default class Sidebar extends Component {
           <nav href="#navbar"   data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
           <aside>
             <div className="text-center">
-            <img src={Logo} alt="Logo" />;
+            <img src={Logo} alt="Logo" />
             <br/>
             <br/>
               <span className="email"><i></i>bhl12345@pontificating-peasant.com</span>

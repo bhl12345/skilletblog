@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
     <div className="gridContainer">
     <Header style={{justifyContent: "left"}}  siteTitle={data.site.siteMetadata?.title || `Title`  } />
     <div className="left" style={{color:`#663399`}}>
-    <Sidebar />  
+    <Sidebar />
        </div>     
      <div className="middle" style={{color:`#663399`}} >
      <ull style={{width: "560"}}>
