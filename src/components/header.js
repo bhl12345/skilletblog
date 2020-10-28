@@ -33,7 +33,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
             textAlign: `center`,
             fontFamily: `Sofia`,
-            textShadow: `0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black`
+            textShadow: `0 1 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black`
            
           }}
         >
@@ -42,7 +42,7 @@ const Header = ({ siteTitle }) => (
       </h1>
       <h3 style={{
           color: `white`, fontFamily: `Sofia`,
-          textShadow: `0 0 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black`
+          textShadow: `0 1 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black`
         }}>You don't have to be rich to have a view that matters.</h3>
     </div>
   </header>
