@@ -1,11 +1,12 @@
 ---
 path: '/sept-28-2020'
 date: '2020-09-28'
+featuredImage: './trumpcorrupt.jpg'
 title: 'Trump is a lying criminal. Who Knew.'
 tags: ['fraud', '2020']
 excerpt: 'To his faithful followers it means nothing'
 ---
-## Is this really a surprise
+##Is this really a surprise##
 
 I am amused by the reaction to the news about "the Donald." To me, this just verifies what his actions have dictated since day one. He has never been a good businessman, husband, or father. Not to mention the disaster he has been as president.
 

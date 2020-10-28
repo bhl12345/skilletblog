@@ -16,12 +16,12 @@ const blogPost = ({ data, pathContext }) => {
   return (
    <Layout> 
     <div>
-    <Img fluid={featuredImgFluid} />
       <h1>{title}</h1>
       <div>
         <em>{date}</em>
       </div> 
       <br />
+      <Img fluid={featuredImgFluid} />
       <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
       <HyvorTalk.Embed websiteId={2222} loadMode="scroll" />
       <p>

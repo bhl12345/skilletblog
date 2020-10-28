@@ -1,6 +1,7 @@
 ---
 path: '/oct-14-2020'
 date: '2020-10-14'
+featuredImage: './pontificate.png'
 title: 'Peasant Polls is now available'
 tags: ['polls', '2020']
 excerpt: 'Vote or Create your own poll'
