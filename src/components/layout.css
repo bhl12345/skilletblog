@@ -37,7 +37,7 @@ body {
   display: grid;
   justify-content: left;
   height: auto;
-  width: auto;
+  width: 500px;
   position:auto;
   
 }
@@ -48,20 +48,30 @@ body {
   display: grid;
   justify-content: center;
   height: auto;
-  width: auto;
-  position:auto;
+  width: 600px;
+  
   padding: 20px;
  
 }
 
+ull{
+    list-style:none;
+    width: 100%;
+    height: auto;
+    background-color:#white;
+    display: block;
+    justify-content: center;
+}
 
 /* Style the right column */
 .right {
   grid-area: right;
   display: grid;
-  justify-content: right;
+  width: 400px;
+  position:auto;
   height: auto; 
   position:auto;
+  
    
  
 }

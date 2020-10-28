@@ -3,6 +3,9 @@
  */
 import React, { Component } from 'react'
 import Logo from "../images/pontificate.png"
+import FactCheck from "../components/FactCheckfeed"
+import Newslist from "../components/newslist/Newslist"
+import CCF from "../pages/climatechangefeed"
 import { Link } from 'react-router';
 
 export default class Sidebar extends Component {
@@ -29,6 +32,11 @@ export default class Sidebar extends Component {
                 <br/>
                 <a href="https://www.snopes.com/">Check The Facts</a>
                 </ul>
+                <FactCheck/>
+                <br/>
+                <Newslist  />
+                <CCF/>    
+               <br/>
               </div>
             </nav>
           </aside>

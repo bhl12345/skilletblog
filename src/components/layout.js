@@ -9,10 +9,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
-import Newslist from "../components/newslist/Newslist"
 import Sidebar from "../components/sidebar"
-import FactCheck from "../components/FactCheckfeed"
-import CCF from "../pages/climatechangefeed"
 import Logo from "../images/3kinds.jpg"
 import HyvorTalk from 'hyvor-talk-react'
  
@@ -39,28 +36,23 @@ const Layout = ({ children }) => {
     <Sidebar />  
        </div>     
      <div className="middle" >
-     <h3>Olbermann vs. Trump</h3>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/gJN3X1fpELk" frameborder="0" 
-    	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    		 allowfullscreen></iframe>
-	 <h3>The lyrics couldn't be more accurate for our current times. That is why people are "Taking it to the Streets"
-	 </h3>
+     <ull style={{width: "560"}}>
+     <p>I miss having adults in the room</p>
+     	<iframe width="560" height="315" src="https://www.youtube.com/embed/2WDi9uOU5lE?start=549"
+    	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    		 allowfullscreen="true"></iframe>
+    <p>The lyrics seem very appropriate for our current times</p>
 	 <iframe width="560" height="315" src="https://www.youtube.com/embed/yBzlH5fIwEw" frameborder="0" 
 		 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-		 allowfullscreen></iframe>
-	     <br/>
-     <h3>Watch and see why it is alot harder than it should be</h3>
+		 allowfullscreen="true"></iframe>
+    <p>Watch and see why it is harder than it should be</p>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/xtdU5RPDZqI"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    	 allowfullscreen></iframe>
+    	 allowfullscreen="true"></iframe>
+    	</ull>
     </div>
-     <div style={{padding: "20px"}}>{children}</div>
+     <div className="right" style={{padding: "20px"}}>{children}</div>
      <div style={{color:`#663399`}}>
-     <FactCheck/>
-     <br/>
-     <Newslist  />
-     <CCF/>    
-    <br/>
      </div>
       </div>
       <div>
