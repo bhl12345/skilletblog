@@ -22,6 +22,7 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
         align:`center`,
+        
       }} 
     >
       <h1 style={{ margin: 0 }}>
@@ -31,13 +32,17 @@ const Header = ({ siteTitle }) => (
             color: `white`,
             textDecoration: `none`,
             textAlign: `center`,
+            fontFamily: `Sofia`,
+            textShadow: `0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black`
+           
           }}
         >
           {siteTitle}
         </Link>
       </h1>
       <h3 style={{
-          color: `white`, 
+          color: `white`, fontFamily: `Sofia`,
+          textShadow: `0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black`
         }}>You don't have to be rich to have a view that matters.</h3>
     </div>
   </header>
