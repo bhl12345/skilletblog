@@ -35,17 +35,17 @@ const Layout = ({ children }) => {
     <div className="left" style={{color:`#663399`}}>
     <Sidebar />  
        </div>     
-     <div className="middle" >
+     <div className="middle" style={{color:`#663399`}} >
      <ull style={{width: "560"}}>
-     <p>I miss having adults in the room</p>
+     <h2 >I miss having adults in the room</h2>
      	<iframe width="560" height="315" src="https://www.youtube.com/embed/2WDi9uOU5lE?start=549"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     		 allowfullscreen="true"></iframe>
-    <p>The lyrics seem very appropriate for our current times</p>
+    <h2>The lyrics seem very appropriate for our current times</h2>
 	 <iframe width="560" height="315" src="https://www.youtube.com/embed/yBzlH5fIwEw" frameborder="0" 
 		 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 		 allowfullscreen="true"></iframe>
-    <p>Watch and see why it is harder than it should be</p>
+    <h2>Watch and see why it is harder than it should be</h2>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/xtdU5RPDZqI"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     	 allowfullscreen="true"></iframe>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
 import CBox from '../components/BottomBar'
 import HyvorTalk from 'hyvor-talk-react'
@@ -9,12 +10,13 @@ const blogPost = ({ data, pathContext }) => {
   const title = data.markdownRemark.frontmatter.title
   const date = data.markdownRemark.frontmatter.date
   const html = data.markdownRemark.html
- 
+  const post = data.markdownRemark
   const { next, prev } = pathContext
-
+  const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
    <Layout> 
     <div>
+    <Img fluid={featuredImgFluid} />
       <h1>{title}</h1>
       <div>
         <em>{date}</em>
@@ -46,7 +48,14 @@ export const postQuery = graphql`
 query($pathSlug: String!) {
   markdownRemark(frontmatter: { path: { eq: $pathSlug } }) {
     html
-    frontmatter {
+    frontmatter { 
+      featuredImage {
+      childImageSharp{
+      	fluid(maxWidth: 800){
+      		...GatsbyImageSharpFluid
+      	 }
+        }
+      }
       title
       date(formatString: "MMMM, DD, YYYY")
       path

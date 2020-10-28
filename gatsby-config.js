@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://www.pontificating-peaseant.com/`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+	  `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

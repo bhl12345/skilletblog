@@ -1,12 +1,13 @@
 ---
 path: '/oct-27-2020'
 date: '2020-10-27'
+featuredImage: './hypocrites.jpeg'
 title: 'Shameless hypocrites set to confirm nominee'
-tags: [' ', '2020']
+tags: ['hypocrites ', '2020']
 excerpt: 'No time for stimulus but time for a nomination'
 ---
  
-![image from rollingstone.com](hypocrites.jpeg)
+![image from rollingstone.com](./hypocrites.jpeg)
  
 So with millions of citizens still trying to figure out how to deal with the fall out from the virus, the hypocrites Trumplicans in the Senate are more worried about slamming through a judicial nomination. In a country that continues to contend that it is a democracy, power sure does lay in the hands of a few. They don't care about the citizens of this country. Their actions show they represent those that can make their wallets fatter. In turn they legislate for those few. It is disgusting!
 
