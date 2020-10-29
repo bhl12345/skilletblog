@@ -12,6 +12,8 @@ const Header = ({ siteTitle }) => (
     textAlign: "center",
     fontSize: "25px",
     width: "100%",
+    fontFamily: "Sofia",
+    textShadow: "0  7px black, 0 0 5px black, 0 0 5px black, 0 0 5px black"
     
     }}
   >
@@ -31,10 +33,7 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            textAlign: `center`,
-            fontFamily: `Sofia`,
-            textShadow: `0  7px black, 0 0 5px black, 0 0 5px black, 0 0 5px black`
-           
+            textAlign: `center`,    
           }}
         >
           {siteTitle}
