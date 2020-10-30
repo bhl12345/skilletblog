@@ -37,6 +37,10 @@ const Layout = ({ children }) => {
        </div>     
      <div className="middle" style={{color:`#663399`}} >
      <ull style={{width: "560"}}>
+     <h2 >WE ARE THE WORST (Revised Music!) by Founders Sing — Trump & Company Tell the Truth!</h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/P1lailGN1xg"
+    	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    	 allowfullscreen="true"></iframe>
      <h2 >I miss having adults in the room</h2>
      	<iframe width="560" height="315" src="https://www.youtube.com/embed/2WDi9uOU5lE?start=549"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -50,8 +54,9 @@ const Layout = ({ children }) => {
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     	 allowfullscreen="true"></iframe>
     	</ull>
-    </div>
-     <div className="right" style={{padding: "20px"}}>{children}</div>
+    </div> 
+     <div className="right" style={{padding: "20px"}}>{children} 
+     </div>
      <div style={{color:`#663399`}}>
      </div>
       </div>

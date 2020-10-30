@@ -13,8 +13,7 @@ const Header = ({ siteTitle }) => (
     fontSize: "25px",
     width: "100%",
     fontFamily: "Sofia",
-    textShadow: "0  7px black, 0 0 5px black, 0 0 5px black, 0 0 5px black"
-    
+    textShadow: "0  7px black, 0 0 5px black, 0 0 5px black, 0 0 5px black"  
     }}
   >
     <div
