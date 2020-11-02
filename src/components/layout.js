@@ -22,8 +22,11 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           description
-        }
+        }     
       }
+  markdownRemark(frontmatter: {featuredImage: {childImageSharp: {}}}) {
+    id
+  }
     }
   `)
 
@@ -55,7 +58,7 @@ const Layout = ({ children }) => {
     	 allowfullscreen="true"></iframe>
     	</ull>
     </div> 
-     <div className="right" style={{padding: "20px"}}>{children} 
+     <div className="right" style={{fontSize: "25px" ,padding: "20px"}}>{children} 
      </div>
      <div style={{color:`#663399`}}>
      </div>

@@ -11,11 +11,13 @@ const blogPost = ({ data, pathContext }) => {
   const date = data.markdownRemark.frontmatter.date
   const html = data.markdownRemark.html
   const post = data.markdownRemark
+ 
   const { next, prev } = pathContext
-  const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+  
   return (
    <Layout> 
     <div>
+    
       <h1>{title}</h1>
       <div>
         <em>{date}</em>
