@@ -7,14 +7,13 @@ import FactCheck from "../components/FactCheckfeed"
 import LifeHack from "../components/LifeHack"
 import Newslist from "../components/newslist/Newslist"
 import CCF from "../pages/climatechangefeed"
-import { Link } from 'react-router';
 
 export default class Sidebar extends Component {
   render() {
     return (
       <div>
         <div>
-          <nav href="#navbar"   data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
+          <nav href="#navbar"   data-toggle="collapse" data-target="#navbar"   aria-controls="navbar"><i /></nav>
           <aside>
             <div className="text-center">
             <img src={Logo} alt="Logo" />
