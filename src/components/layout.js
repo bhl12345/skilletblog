@@ -39,22 +39,10 @@ const Layout = ({ children }) => {
        </div>     
      <div className="middle" style={{color:`#663399`}} >
      <ull style={{width: "560"}}>
-     <h2>Pre-Election Special with Noam Chomsky</h2>
-     <iframe title="Pre-Election Special with Noam Chomsky" width="560" height="315" src="https://www.youtube.com/embed/UoB19wrjtFI" frameborder="0" 
-    	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    	 allowfullscreen></iframe>
      <h2 >WE ARE THE WORST (Revised Music!) by Founders Sing — Trump & Company Tell the Truth!</h2>
      <iframe title="We are the worst" width="560" height="315" src="https://www.youtube.com/embed/P1lailGN1xg"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     	 allowfullscreen="true"></iframe>
-     <h2 >I miss having adults in the room</h2>
-     	<iframe title="Adults in the room" width="560" height="315" src="https://www.youtube.com/embed/2WDi9uOU5lE?start=549"
-    	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    		 allowfullscreen="true"></iframe>
-    <h2>The lyrics seem very appropriate for our current times</h2>
-	 <iframe title="lyrics" width="560" height="315" src="https://www.youtube.com/embed/yBzlH5fIwEw" frameborder="0" 
-		 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-		 allowfullscreen="true"></iframe>
     <h2>Watch and see why it is harder than it should be</h2>
      <iframe title="Harder" width="560" height="315" src="https://www.youtube.com/embed/xtdU5RPDZqI"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
