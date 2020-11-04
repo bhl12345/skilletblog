@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
+import CBox from '../components/BottomBar'
 import HyvorTalk from 'hyvor-talk-react'
 
 
@@ -8,20 +10,18 @@ const blogPost = ({ data, pathContext }) => {
   const title = data.markdownRemark.frontmatter.title
   const date = data.markdownRemark.frontmatter.date
   const html = data.markdownRemark.html
-  
- 
+  const post = data.markdownRemark
   const { next, prev } = pathContext
-  
+  const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
    <Layout> 
     <div>
-    
       <h1>{title}</h1>
       <div>
         <em>{date}</em>
       </div> 
       <br />
-      
+      <Img fluid={featuredImgFluid} />
       <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
       <HyvorTalk.Embed websiteId={2222} loadMode="scroll" />
       <p>
