@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Sidebar from "../components/sidebar"
+import Img from "../images/NoMan.jpg"
 
  
  
@@ -38,7 +39,9 @@ const Layout = ({ children }) => {
     <Sidebar />
        </div>     
      <div className="middle" style={{color:`#663399`}} >
+     
      <ull style={{width: "560"}}>
+     <img src={Img} alt="Logo" />
      <h2 >WE ARE THE WORST (Revised Music!) by Founders Sing — Trump & Company Tell the Truth!</h2>
      <iframe title="We are the worst" width="560" height="315" src="https://www.youtube.com/embed/P1lailGN1xg"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
