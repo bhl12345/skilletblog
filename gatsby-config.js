@@ -34,6 +34,14 @@ module.exports = {
           ],
         },
       },
+      
+      {
+    	    // Note: this plugin is coded to only work on production
+    	    resolve: `gatsby-plugin-subscribers`,
+    	    options: {
+    	      id: 'e4f7886e-e9cf-4777-8f78-e8d18f0cedd9',
+    	    }
+    	  },
     
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
