@@ -43,6 +43,11 @@ const Header = ({ siteTitle }) => (
           textShadow: `0 0 7px black, 0 0 5px black, 0 0 5px black, 0 0 5px black`
         }}>You don't have to be rich to have a view that matters.</h3>
     </div>
+        <div>
+        <script type="text/javascript">var subscribersSiteId='e4f7886e-e9cf-4777-8f78-e8d18f0cedd9';
+        </script><script type="text/javascript"
+        	src="https://cdn.subscribers.com/assets/subscribers.js"></script>
+        </div>
   </header>
 )
 
