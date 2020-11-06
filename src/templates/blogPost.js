@@ -15,8 +15,6 @@ const blogPost = ({ data, pathContext }) => {
   const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
    <Layout> 
-   <script type="text/javascript">var subscribersSiteId='e4f7886e-e9cf-4777-8f78-e8d18f0cedd9';
-   </script><script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
     <div>
       <h1>{title}</h1>
       <div>
