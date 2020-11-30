@@ -8,7 +8,7 @@ class AudioPlayer extends Component {
     <div>
       <h3>Listen To The - <a href="https://www.pontificating-peasant.com">Peasant Podcast</a></h3>
       <ReactPlayer
-        url="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+        url="https://github.com/bhl12345/skilletblog/blob/master/src/audio/01%20Show%20Me%20The%20Way%20(Live).mp3"
         width="545px"
         height="50px"
         playing={false}
