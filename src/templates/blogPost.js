@@ -13,6 +13,7 @@ const blogPost = ({ data, pathContext }) => {
   const post = data.markdownRemark
   const { next, prev } = pathContext
   const featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
+
   return (
    <Layout> 
     <div>
