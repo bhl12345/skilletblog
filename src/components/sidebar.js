@@ -19,7 +19,7 @@ export default class Sidebar extends Component {
             <img src={Logo} alt="Logo" />
             <br/>
             <br/>
-              <span className="email"><i></i>bhl12345@pontificating-peasant.com</span>
+              <span className="email"><i></i>pontificate@pontificating-peasant.com</span>
             </div>
             <nav >
               <div>
