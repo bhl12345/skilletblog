@@ -1,7 +1,7 @@
 ---
 path: '/oct-27-2020'
 date: '2020-10-27'
-featuredImage: './hypocrites.jpeg'
+featuredImage: './pontificate.png'
 title: 'Shameless hypocrites set to confirm nominee'
 tags: ['hypocrites ', '2020']
 excerpt: 'No time for stimulus but time for a nomination'
