@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Sidebar from "./sidebar"
- 
+import AudioPlayer from "./audioplayer"
 import Img from "../images/NoMan.jpg"
 
  
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
      <div className="middle" style={{color:`#663399`}} >
 
      <ull style={{width: "560"}}>
-      
+     <AudioPlayer style={{justifyContent: "center"}}/>
      <br/>
      <img src={Img} alt="Logo" />
      <h2 >WE ARE THE WORST (Revised Music!) by Founders Sing — Trump & Company Tell the Truth!</h2>
