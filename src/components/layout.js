@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import Sidebar from "../components/sidebar"
-import AudioPlayer from "../components/audioplayer"
+import AudioPlayer from "./audioplayer"
 import Img from "../images/NoMan.jpg"
 
  
