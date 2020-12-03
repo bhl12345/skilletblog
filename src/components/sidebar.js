@@ -3,7 +3,6 @@
  */
 import React, { Component } from 'react'
 import Logo from "../images/pontificate.png"
-import FactCheck from "../components/FactCheckfeed"
 import LifeHack from "../components/LifeHack"
 import Newslist from "../components/newslist/Newslist"
 import CCF from "../pages/climatechangefeed"
@@ -33,8 +32,6 @@ export default class Sidebar extends Component {
                 <a href="https://www.snopes.com/">Check The Facts</a>
                 </ul>
                 <LifeHack/>
-                <br/>
-                <FactCheck/>
                 <br/>
                 <Newslist  />
                 <CCF/>    

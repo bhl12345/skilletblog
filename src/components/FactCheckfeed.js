@@ -28,7 +28,7 @@
         console.log(this.state);
         return (
           <div >
-            <h2>FactCheck.org News</h2>
+            <h2 style={{color:`#663399`}}>FactCheck.org News</h2>
            
             {this.state.items.map(item => (
             <ul>

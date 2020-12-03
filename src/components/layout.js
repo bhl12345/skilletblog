@@ -12,6 +12,7 @@ import "./layout.css"
 import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
 import Img from "../images/NoMan.jpg"
+import FactCheck from "../components/FactCheckfeed"
 
  
 
@@ -62,7 +63,16 @@ const Layout = ({ children }) => {
     <div >
   </div>
   <br/>
-     <div className="right" style={{fontSize: "25px" ,padding: "20px"}}>{children} 
+     <div className="right" style={{fontSize: "20px" ,padding: "20px"}}>
+      <ul> 
+        
+     <FactCheck style={{color:`#663399`}}/>
+     
+     <br/>
+      
+     <h2 style={{color:`#663399`}}>Blog Posts</h2>
+       {children}  
+       </ul>
      </div>
      <div style={{color:`#663399`}}>
      </div>
