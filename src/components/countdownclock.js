@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Countdown from './Countdown.js';
+import Countdown from './countdown.js';
  
  
 
