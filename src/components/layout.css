@@ -54,11 +54,11 @@ body {
  
 }
 
-ull{
+.ul{
     list-style:none;
     width: 100%;
     height: auto;
-    background-color:#white;
+    background-color:white;
     display: block;
     justify-content: center;
 }
@@ -71,10 +71,6 @@ ull{
   position:auto;
   height: auto; 
   position:auto;
-  
-  
-   
- 
 }
 
 /* Style the footer */
