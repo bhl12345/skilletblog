@@ -12,7 +12,6 @@ import "./layout.css"
 import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
 import Scroll from "./ScrollText"
-import Img from "../images/NoMan.jpg"
 import FactCheck from "../components/FactCheckfeed"
 
 
