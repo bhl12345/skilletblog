@@ -11,6 +11,7 @@ import Header from "./header"
 import "./layout.css"
 import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
+import Scroll from "./ScrollText"
 import Img from "../images/NoMan.jpg"
 import FactCheck from "../components/FactCheckfeed"
 
@@ -48,9 +49,13 @@ const Layout = ({ children }) => {
      <div className="middle" style={{color:`#663399`}} >
 
      <ull style={{width: "560"}}>
+       <div>
+       <Scroll style={{fontSize: `125px`}}/>
+       </div>
+       <div>
      <AudioPlayer style={{justifyContent: "center"}}/>
+     </div>
      <br/>
-     <img src={Img} alt="Logo" />
      <h2>Covid becomes realty for the deniers</h2>
      <iframe width="560" height="315" src="https://www.youtube.com/embed/kwC2yH4Hpv0" frameborder="0" 
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
