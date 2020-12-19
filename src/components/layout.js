@@ -11,7 +11,7 @@ import Header from "./header"
 import "./layout.css"
 import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
-import Scroll from "./ScrollText"
+import Scroll from "./scrolltext"
 import FactCheck from "../components/FactCheckfeed"
 
 
