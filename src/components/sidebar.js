@@ -2,6 +2,7 @@
  * 
  */
 import React, { Component } from 'react'
+import * as VFX from 'react-vfx'
 import Logo from "../images/pontificate.png"
 import LifeHack from "../components/LifeHack"
 import Newslist from "../components/newslist/Newslist"
@@ -15,7 +16,9 @@ export default class Sidebar extends Component {
           <nav href="#navbar"   data-toggle="collapse" data-target="#navbar"   aria-controls="navbar"><i /></nav>
           <aside>
             <div className="text-center">
-            <img src={Logo} alt="Logo" />
+            <VFX.VFXProvider>
+            <VFX.VFXImg src={Logo} alt="Logo" shader="spring" />
+            </VFX.VFXProvider>
             <br/>
             <br/>
               <span className="email"><i></i>pontificate@pontificating-peasant.com</span>

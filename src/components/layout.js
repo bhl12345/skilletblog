@@ -55,8 +55,8 @@ const Layout = ({ children }) => {
      <AudioPlayer style={{justifyContent: "center"}}/>
      </div>
      <br/>
-     <h2>Covid becomes realty for the deniers</h2>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/kwC2yH4Hpv0" frameborder="0" 
+     <h2>Covid becomes reality for the deniers</h2>
+     <iframe title="Covid Reality" width="560" height="315" src="https://www.youtube.com/embed/kwC2yH4Hpv0" frameborder="0" 
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      <h2 >WE ARE THE WORST (Revised Music!) by Founders Sing — Trump & Company Tell the Truth!</h2>
      <iframe title="We are the worst" width="560" height="315" src="https://www.youtube.com/embed/P1lailGN1xg"

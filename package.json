@@ -41,6 +41,7 @@
     "react-player": "^2.7.0",
     "react-router-dom": "^5.2.0",
     "react-typical": "^0.1.3",
+    "react-vfx": "^0.4.1",
     "reactide-config": "^1.0.2",
     "redux": "^4.0.5",
     "rss-parser": "^3.9.0",
