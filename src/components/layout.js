@@ -55,6 +55,11 @@ const Layout = ({ children }) => {
      <AudioPlayer style={{justifyContent: "center"}}/>
      </div>
      <br/>
+     <h2>Actions as usual, speak louder than words</h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/Yky9xGsjQTE" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+     gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <br/>
      <h2>Covid becomes reality for the deniers</h2>
      <iframe title="Covid Reality" width="560" height="315" src="https://www.youtube.com/embed/kwC2yH4Hpv0" frameborder="0" 
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
