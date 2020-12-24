@@ -13,6 +13,7 @@ import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
 import Scroll from "./scrolltext"
 import FactCheck from "../components/FactCheckfeed"
+import HyvorTalk from 'hyvor-talk-react'
 
 
  
@@ -53,6 +54,7 @@ const Layout = ({ children }) => {
        </div>
        <div>
      <AudioPlayer style={{justifyContent: "center"}}/>
+     <HyvorTalk.Embed websiteId={2222} loadMode="scroll" />
      </div>
      <br/>
      <h2>Actions as usual, speak louder than words</h2>
