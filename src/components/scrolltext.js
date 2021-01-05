@@ -7,7 +7,7 @@ class ScrollText extends React.Component {
         <h1>
       <Typical
         steps={['No human is good enough to govern another without the others consent!!!!',
-         1000,'',500 ]}
+         2000,'',300 ]}
         loop={Infinity}
         wrapper="p"
       />

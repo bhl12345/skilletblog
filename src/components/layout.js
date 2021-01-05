@@ -14,6 +14,7 @@ import AudioPlayer from "./audioplayer"
 import Scroll from "./scrolltext"
 import FactCheck from "../components/FactCheckfeed"
 import HyvorTalk from 'hyvor-talk-react'
+import Newslist from "../components/newslist/Newslist"
 
 
  
@@ -45,6 +46,8 @@ const Layout = ({ children }) => {
     <Header style={{justifyContent: "left"}}  siteTitle={data.site.siteMetadata?.title || `Title`  } />
     <div className="left" style={{color:`#663399`}}>
     <Sidebar />
+    <h2 style={{color:`#663399`}}>Blog Posts</h2>
+       {children} 
        </div>     
      <div className="middle" style={{color:`#663399`}} >
 
@@ -57,18 +60,11 @@ const Layout = ({ children }) => {
      <HyvorTalk.Embed websiteId={2222} loadMode="scroll" />
      </div>
      <br/>
-     <h2>Actions as usual, speak louder than words</h2>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/Yky9xGsjQTE" frameborder="0" 
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-     gyroscope; picture-in-picture" allowfullscreen></iframe>
      <br/>
      <h2>Covid becomes reality for the deniers</h2>
      <iframe title="Covid Reality" width="560" height="315" src="https://www.youtube.com/embed/kwC2yH4Hpv0" frameborder="0" 
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     <h2 >WE ARE THE WORST (Revised Music!) by Founders Sing — Trump & Company Tell the Truth!</h2>
-     <iframe title="We are the worst" width="560" height="315" src="https://www.youtube.com/embed/P1lailGN1xg"
-    	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    	 allowfullscreen="true"></iframe>
+ 
     <h2>Watch and see why it is harder than it should be</h2>
      <iframe title="Harder" width="560" height="315" src="https://www.youtube.com/embed/xtdU5RPDZqI"
     	 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -82,11 +78,11 @@ const Layout = ({ children }) => {
       <ul> 
         
      <FactCheck style={{color:`#663399`}}/>
+     <Newslist />
      
      <br/>
       
-     <h2 style={{color:`#663399`}}>Blog Posts</h2>
-       {children}  
+  
        </ul>
      </div>
      <div style={{color:`#663399`}}>
