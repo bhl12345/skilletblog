@@ -4,11 +4,13 @@
 import React, { Component } from 'react'
 import * as VFX from 'react-vfx'
 import Logo from "../images/pontificating.jpg"
-import LifeHack from "../components/LifeHack"
-import Newslist from "../components/newslist/Newslist"
-import CCF from "../pages/climatechangefeed"
+import FactCheck from "../components/FactCheckfeed"
 
+
+ 
 export default class Sidebar extends Component {
+
+
   render() {
     return (
       <div>
@@ -21,8 +23,10 @@ export default class Sidebar extends Component {
             </VFX.VFXProvider>
             <br/>
             <br/>
-              <span className="email"><i></i>pontificate@pontificating-peasant.com</span>
+              <span className="email"><i></i>pontificate@pontificating-peasant.com</span>  
+              <FactCheck style={{color:`#663399`}}/>  
             </div>
+            
             <nav >
               <div>
                <br/>
