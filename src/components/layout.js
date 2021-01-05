@@ -78,7 +78,7 @@ const Layout = ({ children }) => {
       <ul> 
         
      <FactCheck style={{color:`#663399`}}/>
-     <Newslist />
+     <Newslist style={{color:`#663399`}} />
      
      <br/>
       

@@ -25,17 +25,6 @@ export default class Sidebar extends Component {
             </div>
             <nav >
               <div>
-                <ul>
-     
-                <h3>Resources</h3>
-                <a href="https://usafacts.org/">USAFacts</a>
-                <br/>
-                <br/>
-                <a href="https://www.snopes.com/">Check The Facts</a>
-                </ul>
-             
-               
-               
                <br/>
               </div>
             </nav>
