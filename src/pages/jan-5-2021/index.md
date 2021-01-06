@@ -6,7 +6,7 @@ title: 'You lost now shut up, Cruz and the boys anti-democratic, Facism seems to
 tags: ['podcast', '2021']
 excerpt: 'Transcript of podcast Jan 5 2021'
 ---
-Fourteen days til dummy has to go!
+Fourteen days til dummy has to go!`
 
 For god's sake Donald, you mentally challenged piece of human excrement, you fucking lost. Quit being a little bitch and get over it, we are. 
 Well those of us not in the Trump cult. You are proof positive that the rich have a different set of rules. Otherwise you would currently be worried
