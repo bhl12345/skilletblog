@@ -3,7 +3,7 @@
  */
 import React, { Component } from 'react'
 import * as VFX from 'react-vfx'
-import Logo from "../images/pontificating.jpg"
+import Logo from "../images/pontificating.png"
 import FactCheck from "../components/FactCheckfeed"
 
 
@@ -19,7 +19,7 @@ export default class Sidebar extends Component {
           <aside>
             <div className="text-center">
             <VFX.VFXProvider>
-            <VFX.VFXImg src={Logo} alt="Logo" shader="spring" />
+            <img src={Logo} alt="Logo" shader="spring" />
             </VFX.VFXProvider>
             <br/>
             <br/>

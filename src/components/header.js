@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
     gridArea: "header",
-    background: "rebeccapurple",   
+    background: "#663399",   
     textAlign: "center",
     fontSize: "25px",
     width: "100%",
