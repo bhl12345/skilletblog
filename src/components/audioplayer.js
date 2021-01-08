@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactPlayer from "react-player";
 import mp3_file from "../audio/peasantcast.mp3";
+import Logo from "../images/pontificating2.jpg"
 
 function AudioPlayer() {
   return (
-    <div>
+   
+    <div >
+      <img style={{position: 'relative', display: 'inline-block', left: '50%', transform: 'translate(-50%)'}} src={Logo} alt="Logo" shader="spring"  /> 
+      <div>
       <h3>Click and listen to the - <a style={{color:`#663399`}} href="https://www.pontificating-peaseant.com">Peasant Podcast</a></h3>
       <ReactPlayer
         url={mp3_file}
@@ -13,6 +17,7 @@ function AudioPlayer() {
         playing={false}
         controls={true}
       />
+      </div>
     </div>
   );
 }

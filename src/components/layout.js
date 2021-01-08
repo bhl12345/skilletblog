@@ -13,13 +13,8 @@ import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
 import Scroll from "./scrolltext"
 import HyvorTalk from 'hyvor-talk-react'
-
-
- 
-
  
  
-
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -27,6 +22,7 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           description
+          
         }     
       }
   markdownRemark(frontmatter: {featuredImage: {childImageSharp: {}}}) {
@@ -34,8 +30,6 @@ const Layout = ({ children }) => {
   }
     }
   `)
-  
- 
 
   return (
     < >
@@ -51,9 +45,11 @@ const Layout = ({ children }) => {
        <div>
        <Scroll style={{fontSize: `125px`}}/>
        </div>
+       <div>  </div>
        <div>
+      
      <AudioPlayer style={{justifyContent: "center"}}/>
-     <HyvorTalk.Embed websiteId={2222} loadMode="scroll" />
+     <HyvorTalk.Embed websiteId={2222} loadMode="scroll"   />
      </div>
      <br/>
      <br/>
