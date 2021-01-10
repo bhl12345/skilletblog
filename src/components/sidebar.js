@@ -23,7 +23,7 @@ export default class Sidebar extends Component {
             </VFX.VFXProvider>
             <br/>
             <br/>
-              <span className="email"><i></i>pontificate@pontificating-peasant.com</span>  
+              <span className="email"><i></i>pontificatingpeasant@gmail.com</span>  
               <FactCheck style={{color:`#663399`}}/>  
             </div>
             
