@@ -49,10 +49,13 @@ const Layout = ({ children }) => {
        <div>
       
      <AudioPlayer style={{justifyContent: "center"}}/>
-     <HyvorTalk.Embed websiteId={2222} loadMode="scroll"   />
+    
      </div>
      <br/>
      <br/>
+     <h2>Hilarious</h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/wT5kafhG3Qw" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      <h2>Covid becomes reality for the deniers</h2>
      <iframe title="Covid Reality" width="560" height="315" src="https://www.youtube.com/embed/kwC2yH4Hpv0" frameborder="0" 
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
