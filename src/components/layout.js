@@ -11,9 +11,8 @@ import Header from "./header"
 import "./layout.css"
 import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
-import VideoPlayer from "./videoplayer"
 import Scroll from "./scrolltext"
-import HyvorTalk from 'hyvor-talk-react'
+ 
  
  
 const Layout = ({ children }) => {
@@ -53,7 +52,7 @@ const Layout = ({ children }) => {
      <br/>
      <br/>
      <h2>Hilarious</h2>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/wT5kafhG3Qw" frameborder="0" 
+     <iframe title="Sediton" width="560" height="315" src="https://www.youtube.com/embed/wT5kafhG3Qw" frameborder="0" 
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      <h2>Covid becomes reality for the deniers</h2>
      <iframe title="Covid Reality" width="560" height="315" src="https://www.youtube.com/embed/kwC2yH4Hpv0" frameborder="0" 
