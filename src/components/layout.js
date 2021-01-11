@@ -11,6 +11,7 @@ import Header from "./header"
 import "./layout.css"
 import Sidebar from "./sidebar"
 import AudioPlayer from "./audioplayer"
+import VideoPlayer from "./videoplayer"
 import Scroll from "./scrolltext"
 import HyvorTalk from 'hyvor-talk-react'
  
@@ -47,9 +48,7 @@ const Layout = ({ children }) => {
        </div>
        <div>  </div>
        <div>
-      
      <AudioPlayer style={{justifyContent: "center"}}/>
-    
      </div>
      <br/>
      <br/>
@@ -70,12 +69,8 @@ const Layout = ({ children }) => {
   <br/>
      <div className="right" style={{fontSize: "20px" ,padding: "20px"}}>
       <ul> 
-        
-     
-     
-     <br/>
-      
-     <h2 style={{color:`#663399`}}>Blog Posts</h2>
+     <br/>     
+     <h2 style={{color:`#663399`}}>Peasant Posts</h2>
        {children}  
        </ul>
      </div>
