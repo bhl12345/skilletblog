@@ -12,7 +12,7 @@ class ScrollText extends  Component {
           fontSize: "30px",
           width: "100%",
           fontFamily: "Sofia",
-          textShadow: "0  8px black, 0 0 8px black, 0 0 8px black, 0 0 8px black "  
+          textShadow: "0  7px black, 0 0 7px black, 0 0 7px black, 0 0 7px black "  
           }}>
       <Typical
         steps={['No human is good enough to govern another without the other\'s consent!!!!',
