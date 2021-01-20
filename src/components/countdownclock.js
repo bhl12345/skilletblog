@@ -13,7 +13,7 @@ class Countdownclock extends Component {
         
         </div>
         <div style={{position:"right"}}>
-        <h3 className="title" style={{color: "#E7D716" }}>Number of days until the Orange Menace is evicted!</h3>
+        <h3 className="title" style={{color: "#E7D716" }}>He is gone, He is gone indeed!</h3>
         <Countdown date={`${year +0}-01-20T12:00:00`} />
         </div>
       </div>
