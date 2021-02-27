@@ -2,7 +2,6 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
-import HyvorTalk from 'hyvor-talk-react'
 
 
 const blogPost = ({ data, pathContext }) => {
@@ -22,8 +21,6 @@ const blogPost = ({ data, pathContext }) => {
       </div> 
       <br />
       <Img fluid={featuredImgFluid} />
-      <div className="blogpost" dangerouslySetInnerHTML={{ __html: html }} />
-      <HyvorTalk.Embed websiteId={2222} loadMode="scroll" />
       <p>
         {prev && (
           <Link to={prev.frontmatter.path}>
